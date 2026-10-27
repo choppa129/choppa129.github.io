@@ -272,3 +272,8 @@ font-size:18px!important;line-height:1.75}
 @media(max-width:550px){.hero-desc,.about-content p,.section-title-row p,.project-card>p,
 .research-project>p,.project-grid .project-card>p,.timeline-item p,
 .article-content p,.contributions li{font-size:17px!important}}
+
+.experience-photos{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.experience-photos img{height:155px;width:min(100%,240px);object-fit:contain;background:#fff;border:1px solid #e1e1e1}
+.timeline-item{grid-template-columns:125px minmax(0,1fr);gap:25px}
+@media(max-width:550px){.timeline-item{grid-template-columns:1fr;gap:8px}.experience-photos img{height:145px;width:min(100%,210px)}}
