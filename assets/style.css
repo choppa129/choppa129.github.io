@@ -277,3 +277,12 @@ font-size:18px!important;line-height:1.75}
 .experience-photos img{height:155px;width:min(100%,240px);object-fit:contain;background:#fff;border:1px solid #e1e1e1}
 .timeline-item{grid-template-columns:125px minmax(0,1fr);gap:25px}
 @media(max-width:550px){.timeline-item{grid-template-columns:1fr;gap:8px}.experience-photos img{height:145px;width:min(100%,210px)}}
+
+.additional-project-section{background:#fff;border-top:1px solid #e5e5e5}
+.additional-project-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;align-items:center}
+.additional-project-grid h2{font-size:clamp(34px,4vw,55px);line-height:1.15;letter-spacing:-.045em}
+.additional-project-grid p{font-size:18px;line-height:1.8;color:#555}
+.additional-project-grid figure{margin:0;border:1px solid #ddd;padding:12px}
+.additional-project-grid img{width:100%;height:auto;max-height:440px;object-fit:contain}
+.additional-project-grid figcaption{font-size:15px;color:#555;padding:14px 0 4px}
+@media(max-width:800px){.additional-project-grid{grid-template-columns:1fr;gap:24px}}
