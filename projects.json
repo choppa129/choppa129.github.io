@@ -7,8 +7,6 @@
     "timeline": "Aug 2026 — Present",
     "setting": "LIDAR Lab · Georgia Tech",
     "focus": "Dexterous manipulation",
-    "art": "dexterity.svg",
-    "art_alt": "Conceptual line-art visualization of a robot hand, markers, and laboratory containers.",
     "summary": "Building data and perception pipelines to support dexterous robot manipulation in clinical-lab-style tasks.",
     "challenge": "Human hands are remarkably capable at manipulating small, delicate objects. Transferring that dexterity to robots requires precise motion data, robust perception, and careful interaction with the physical world.",
     "overview": "In the LIDAR Lab, I contribute to research on robot manipulation for clinical laboratory workflows. My work connects multi-camera calibration, motion capture, gloved-hand data collection, and trajectory processing to support learning and evaluation of manipulation behaviors. This is ongoing research; the site does not claim a completed end-to-end autonomous system.",
@@ -19,16 +17,39 @@
       "Support simulation and evaluation workflows for manipulation subtasks involving laboratory objects."
     ],
     "workflow": [
-      ["Capture", "Collect synchronized visual and motion-capture observations of human manipulation."],
-      ["Recover", "Calibrate sensors and process marker and hand-pose trajectories into a usable representation."],
-      ["Learn & evaluate", "Use processed demonstrations and simulation experiments to investigate robot manipulation behaviors."]
+      [
+        "Capture",
+        "Collect synchronized visual and motion-capture observations of human manipulation."
+      ],
+      [
+        "Recover",
+        "Calibrate sensors and process marker and hand-pose trajectories into a usable representation."
+      ],
+      [
+        "Learn & evaluate",
+        "Use processed demonstrations and simulation experiments to investigate robot manipulation behaviors."
+      ]
     ],
     "highlights": [
-      ["Multi-view", "Camera + motion-capture calibration"],
-      ["Human → robot", "Motion data preparation for manipulation"]
+      [
+        "Multi-view",
+        "Camera + motion-capture calibration"
+      ],
+      [
+        "Human → robot",
+        "Motion data preparation for manipulation"
+      ]
     ],
     "takeaway": "Current focus: improving the reliability of real-world demonstrations and their usefulness for dexterous robot learning.",
-    "tags": ["Python", "PyTorch", "Multi-camera calibration", "MoCap", "3D reconstruction", "Hand pose", "Robot learning"]
+    "tags": [
+      "Python",
+      "PyTorch",
+      "Multi-camera calibration",
+      "MoCap",
+      "3D reconstruction",
+      "Hand pose",
+      "Robot learning"
+    ]
   },
   {
     "slug": "video-to-simulation",
@@ -38,8 +59,6 @@
     "timeline": "Aug 2026 — Present",
     "setting": "STAR Lab · Georgia Tech",
     "focus": "Real-to-sim · Bimanual robotics",
-    "art": "real2sim.svg",
-    "art_alt": "Conceptual illustration showing video frames converted into a reconstructed 3D scene and robot simulation.",
     "summary": "Reconstructing simulation-ready scenes from videos to explore learning bimanual robot behaviors.",
     "challenge": "Robotic learning from human videos needs more than visual imitation: a system must recover the geometry, object interactions, and physical structure of a scene so that robot behaviors can be evaluated in simulation.",
     "overview": "In the STAR Lab, I work on real-to-sim scene reconstruction as part of a broader video-to-sim-to-real research direction. The goal is to convert observations of human activities into structured, simulation-ready scenes that can support robot-policy learning and evaluation. Deployment to real robots is a research objective, not an outcome claimed here.",
@@ -50,16 +69,39 @@
       "Investigate ways to make the reconstruction and validation pipeline more efficient."
     ],
     "workflow": [
-      ["Observe", "Analyze visual evidence and extract the scene elements relevant to the demonstrated task."],
-      ["Reconstruct", "Recover usable 3D geometry, poses and object representations for a simulator."],
-      ["Simulate", "Validate scene interactions and explore policy-learning evaluations for bimanual manipulation."]
+      [
+        "Observe",
+        "Analyze visual evidence and extract the scene elements relevant to the demonstrated task."
+      ],
+      [
+        "Reconstruct",
+        "Recover usable 3D geometry, poses and object representations for a simulator."
+      ],
+      [
+        "Simulate",
+        "Validate scene interactions and explore policy-learning evaluations for bimanual manipulation."
+      ]
     ],
     "highlights": [
-      ["Video → scene", "Real-world observations to structured simulation"],
-      ["Physics-aware", "Geometry, object states, and interactions"]
+      [
+        "Video → scene",
+        "Real-world observations to structured simulation"
+      ],
+      [
+        "Physics-aware",
+        "Geometry, object states, and interactions"
+      ]
     ],
     "takeaway": "Current focus: making reconstructed environments more reliable and quicker to validate, so they can serve as useful testbeds for embodied learning.",
-    "tags": ["Isaac Sim", "Isaac Lab", "Python", "Real-to-sim", "3D reconstruction", "Embodied AI", "URDF"]
+    "tags": [
+      "Isaac Sim",
+      "Isaac Lab",
+      "Python",
+      "Real-to-sim",
+      "3D reconstruction",
+      "Embodied AI",
+      "URDF"
+    ]
   },
   {
     "slug": "radar-camera-fusion",
@@ -69,8 +111,6 @@
     "timeline": "Sep 2024 — Mar 2025",
     "setting": "Undergraduate Research · SJTU",
     "focus": "Sensor fusion · Computer vision",
-    "art": "fusion.svg",
-    "art_alt": "Conceptual visualization of object detections overlaid with radar range arcs and points.",
     "summary": "Combining a monocular camera and 77 GHz mmWave radar to enrich object detection for field-robot operation.",
     "challenge": "Field robots need perception that remains useful amid visually complex outdoor scenes. Cameras provide rich appearance cues, while mmWave radar contributes range and motion measurements unavailable from an image alone.",
     "overview": "I helped build a sensor-fusion pipeline for robots operating in agricultural field environments. The software combines YOLOv8 visual detections with radar measurements, projects radar observations into camera coordinates, and associates radar points with detected targets.",
@@ -81,16 +121,38 @@
       "Developed a usable visualization workflow for inspecting detections and radar data together."
     ],
     "workflow": [
-      ["Detect", "Run object detection on camera images to identify candidate targets."],
-      ["Align", "Calibrate and project radar returns into the image coordinate system."],
-      ["Associate", "Match the complementary sensor observations to augment detections with radar information."]
+      [
+        "Detect",
+        "Run object detection on camera images to identify candidate targets."
+      ],
+      [
+        "Align",
+        "Calibrate and project radar returns into the image coordinate system."
+      ],
+      [
+        "Associate",
+        "Match the complementary sensor observations to augment detections with radar information."
+      ]
     ],
     "highlights": [
-      ["77 GHz", "Millimeter-wave radar"],
-      ["≈33 ms", "Reported per-frame pipeline latency"]
+      [
+        "77 GHz",
+        "Millimeter-wave radar"
+      ],
+      [
+        "≈33 ms",
+        "Reported per-frame pipeline latency"
+      ]
     ],
     "takeaway": "The project strengthened my understanding of how calibration, temporal behavior, and sensor-specific failure modes affect a real perception system.",
-    "tags": ["Python", "YOLOv8", "OpenCV", "Camera calibration", "mmWave radar", "Sensor fusion"],
+    "tags": [
+      "Python",
+      "YOLOv8",
+      "OpenCV",
+      "Camera calibration",
+      "mmWave radar",
+      "Sensor fusion"
+    ],
     "repo": "https://github.com/choppa129/Radar-Camera-Fusion"
   },
   {
@@ -101,8 +163,6 @@
     "timeline": "Feb — Jun 2024",
     "setting": "Team engineering project · SJTU",
     "focus": "Motion planning · Feedback control",
-    "art": "usv.svg",
-    "art_alt": "Conceptual overhead navigation diagram showing a small boat, obstacles, and an RRT planned path.",
     "summary": "Developing an RRT path planner and validating an autonomous model boat through iterative field testing.",
     "challenge": "A path that looks valid in a simulator can fail on water, where heading dynamics, actuator response, and positioning uncertainty complicate the connection between planning and motion.",
     "overview": "For a team project building an autonomous surface vehicle, I led the RRT planning component and participated in integrating planning with a heading-control system. The team built and tested a differential-thrust boat equipped with positioning and inertial sensors.",
@@ -113,16 +173,38 @@
       "Contributed to iterative field validation across 13 on-water test runs."
     ],
     "workflow": [
-      ["Plan", "Create a collision-aware route from map obstacles with a sampling-based RRT planner."],
-      ["Track", "Convert the planned route into a heading reference and generate control commands through the team's tracking controller."],
-      ["Validate", "Run water tests, measure deviations, and refine planning/control settings."]
+      [
+        "Plan",
+        "Create a collision-aware route from map obstacles with a sampling-based RRT planner."
+      ],
+      [
+        "Track",
+        "Convert the planned route into a heading reference and generate control commands through the team's tracking controller."
+      ],
+      [
+        "Validate",
+        "Run water tests, measure deviations, and refine planning/control settings."
+      ]
     ],
     "highlights": [
-      ["13", "On-water field test runs"],
-      ["0.135 m", "Best reported path deviation"]
+      [
+        "13",
+        "On-water field test runs"
+      ],
+      [
+        "0.135 m",
+        "Best reported path deviation"
+      ]
     ],
     "takeaway": "My primary ownership was the RRT path planner; guidance and control were collaborative parts of the larger vehicle system.",
-    "tags": ["Python", "RRT", "PID", "Path planning", "Autonomous systems", "Field testing"],
+    "tags": [
+      "Python",
+      "RRT",
+      "PID",
+      "Path planning",
+      "Autonomous systems",
+      "Field testing"
+    ],
     "repo": "https://github.com/choppa129/Path-Planning-and-Tracking-Control-for-an-Autonomous-Marine-Vehicle"
   },
   {
@@ -133,8 +215,6 @@
     "timeline": "Apr 2023 — Apr 2024",
     "setting": "Undergraduate research · SJTU",
     "focus": "Computational fluid dynamics",
-    "art": "propeller.svg",
-    "art_alt": "Conceptual wireframe illustration of an annular toroidal propeller with CFD flow lines.",
     "summary": "Pairing parametric geometry generation with CFD to investigate efficient toroidal propeller designs.",
     "challenge": "Unconventional propeller geometry introduces a complex design space: changing blade and ring geometry affects hydrodynamic loading, manufacturability, and propulsion efficiency.",
     "overview": "I developed software to generate and visualize toroidal propeller geometry, then studied how key parameters influence open-water hydrodynamic performance using Reynolds-averaged Navier–Stokes (RANS) simulation. The work resulted in a conference publication.",
@@ -145,16 +225,39 @@
       "Analyzed the relationships among geometric design parameters and simulated hydrodynamic performance."
     ],
     "workflow": [
-      ["Parameterize", "Generate blade surfaces and ring geometry from editable geometric parameters."],
-      ["Simulate", "Evaluate open-water behavior in STAR-CCM+ with RANS and a moving reference frame."],
-      ["Compare", "Validate numerical settings and compare performance metrics with the baseline design."]
+      [
+        "Parameterize",
+        "Generate blade surfaces and ring geometry from editable geometric parameters."
+      ],
+      [
+        "Simulate",
+        "Evaluate open-water behavior in STAR-CCM+ with RANS and a moving reference frame."
+      ],
+      [
+        "Compare",
+        "Validate numerical settings and compare performance metrics with the baseline design."
+      ]
     ],
     "highlights": [
-      ["+3.54%", "Simulated open-water efficiency vs. baseline"],
-      ["2024", "Hydrodynamics conference publication"]
+      [
+        "+3.54%",
+        "Simulated open-water efficiency vs. baseline"
+      ],
+      [
+        "2024",
+        "Hydrodynamics conference publication"
+      ]
     ],
     "takeaway": "The performance improvement refers to CFD results under the studied conditions—not a claimed measured sea-trial gain.",
-    "tags": ["PyQt5", "VTK", "Python", "STAR-CCM+", "CFD", "CAD", "Parametric design"],
+    "tags": [
+      "PyQt5",
+      "VTK",
+      "Python",
+      "STAR-CCM+",
+      "CFD",
+      "CAD",
+      "Parametric design"
+    ],
     "repo": "https://github.com/choppa129/Toroidal-Prop-GUI"
   }
 ]
