@@ -286,3 +286,29 @@ font-size:18px!important;line-height:1.75}
 .additional-project-grid img{width:100%;height:auto;max-height:440px;object-fit:contain}
 .additional-project-grid figcaption{font-size:15px;color:#555;padding:14px 0 4px}
 @media(max-width:800px){.additional-project-grid{grid-template-columns:1fr;gap:24px}}
+
+/* RoboMaster feature: editorial, white, large type; real sourced photography. */
+.robomaster-section{background:#fff;color:#151515;border-top:1px solid #ddd;border-bottom:1px solid #ddd}
+.rm-intro{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,.7fr);gap:clamp(28px,6vw,85px);align-items:center;margin:34px 0 40px}
+.rm-intro h2{font-size:clamp(48px,6.5vw,94px);line-height:1.02;letter-spacing:-.06em;margin:0 0 26px}
+.rm-intro h2 em{font-style:normal;color:#555}
+.rm-intro p,.rm-contribution p{font-size:18px;line-height:1.8;color:#444;max-width:780px}
+.rm-actions{display:flex;flex-wrap:wrap;gap:13px;margin-top:28px}
+.rm-result{padding:35px;border:1px solid #d5d5d5;display:flex;flex-direction:column;gap:12px;background:#fff}
+.rm-result strong{font-size:clamp(66px,8vw,112px);line-height:1;letter-spacing:-.07em}
+.rm-result span{font:600 16px var(--mono);letter-spacing:.05em}
+.rm-result b{font-size:26px}
+.rm-result small{font-size:15px;color:#555;line-height:1.5}
+.rm-gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:40px 0}
+.rm-gallery figure{margin:0;min-width:0;border:1px solid #ddd;background:#fff}
+.rm-gallery figure.rm-wide{grid-column:1/-1}
+.rm-gallery img{display:block;width:100%;height:360px;object-fit:cover;background:#f6f6f6}
+.rm-gallery .rm-wide img{height:clamp(290px,44vw,590px);object-fit:cover}
+.rm-gallery figure:nth-child(2) img{object-fit:contain}
+.rm-gallery figcaption{padding:16px 18px;font-size:15px;color:#444;line-height:1.5}
+.rm-contribution{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;padding:38px 0;border-top:1px solid #ddd}
+.rm-contribution h3{font-size:clamp(28px,3vw,44px);line-height:1.2;letter-spacing:-.04em;margin:20px 0 0}
+.rm-source{font-size:14px;line-height:1.6;color:#666}
+.rm-source a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:850px){.rm-intro,.rm-contribution{grid-template-columns:1fr}.rm-result{max-width:440px}.rm-gallery img{height:280px}}
+@media(max-width:550px){.rm-gallery{grid-template-columns:1fr}.rm-gallery figure.rm-wide{grid-column:auto}.rm-gallery img,.rm-gallery .rm-wide img{height:auto;max-height:410px;object-fit:contain}.rm-intro p,.rm-contribution p{font-size:17px}.rm-actions .btn{width:100%;justify-content:center}}
