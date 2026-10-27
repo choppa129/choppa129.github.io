@@ -333,3 +333,13 @@ font-size:18px!important;line-height:1.75}
 .rm-result .rm-result-champion{font-size:clamp(36px,4.1vw,64px);white-space:nowrap;overflow-wrap:normal;word-break:normal;letter-spacing:-.055em}
 @media(max-width:1050px){.rm-intro{grid-template-columns:1fr}.rm-result{width:100%;max-width:none}.rm-result .rm-result-champion{font-size:clamp(36px,7vw,70px)}}
 @media(max-width:550px){.rm-result .rm-result-champion{font-size:clamp(29px,8.5vw,46px);letter-spacing:-.065em}.rm-result{padding:20px}}
+
+/* The entire RoboMaster 2023 / CHAMPIONS / National Champion / SJTU
+   achievement panel gets a full-width row, not just a wider headline. */
+.rm-intro{display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
+.rm-intro>div:first-child{max-width:920px}
+.rm-result{width:100%;max-width:none;min-width:0;box-sizing:border-box;padding:clamp(26px,4vw,50px)}
+.rm-result .rm-result-champion{font-size:clamp(42px,7.5vw,110px);white-space:nowrap;letter-spacing:-.065em;overflow-wrap:normal}
+.rm-result b{font-size:clamp(22px,3vw,34px)}
+.rm-result small{font-size:clamp(16px,1.6vw,19px)}
+@media(max-width:550px){.rm-result{padding:18px}.rm-result .rm-result-champion{font-size:clamp(29px,8.4vw,46px)}}
