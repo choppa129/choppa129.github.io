@@ -343,3 +343,13 @@ font-size:18px!important;line-height:1.75}
 .rm-result b{font-size:clamp(22px,3vw,34px)}
 .rm-result small{font-size:clamp(16px,1.6vw,19px)}
 @media(max-width:550px){.rm-result{padding:18px}.rm-result .rm-result-champion{font-size:clamp(29px,8.4vw,46px)}}
+
+.rrt-source-panel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:28px 0}
+.rrt-source-panel>div{padding:25px;border:1px solid #ddd;background:#fff}
+.rrt-source-panel strong{font-size:20px}
+.rrt-source-panel p{font-size:17px;line-height:1.7;color:#555;margin:12px 0 22px}
+.rrt-source-panel .btn{font-size:15px}
+.rrt-report-preview{margin:30px 0}
+.rrt-report-preview iframe{width:100%;height:650px;border:1px solid #ddd;background:#fff}
+.rrt-report-preview p{font-size:15px;color:#555;margin-top:12px}
+@media(max-width:700px){.rrt-source-panel{grid-template-columns:1fr}.rrt-report-preview iframe{height:470px}}
