@@ -319,3 +319,11 @@ font-size:18px!important;line-height:1.75}
 .rm-gallery-link p{font-size:17px;line-height:1.65;color:#555;margin:0 0 8px}
 .rm-gallery-curated .rm-wide img{object-fit:cover}
 @media(max-width:550px){.rm-gallery-link{min-height:0}.rm-gallery-curated .rm-wide img{max-height:none}}
+
+/* Champion achievement is the hero, not the competition year. */
+.rm-result{gap:15px;padding:clamp(24px,3vw,42px)}
+.rm-result .rm-result-year{font:600 15px var(--mono);letter-spacing:.09em;color:#666}
+.rm-result .rm-result-champion{display:block;font-family:var(--font);font-size:clamp(38px,4.7vw,76px);line-height:1;letter-spacing:-.065em;font-weight:800;overflow-wrap:anywhere;color:#111}
+.rm-result b{font-size:clamp(20px,2.2vw,28px);line-height:1.25}
+.rm-result small{font-size:16px}
+@media(max-width:850px){.rm-result .rm-result-champion{font-size:clamp(44px,9vw,72px)}}
