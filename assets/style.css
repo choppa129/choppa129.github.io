@@ -420,3 +420,20 @@ font-size:18px!important;line-height:1.75}
 .robomaster-section .scholarships-heading h3{font-size:clamp(34px,4vw,56px);margin:12px 0 18px}
 @media(max-width:900px){.award-competition{grid-template-columns:1fr}.award-visuals{display:grid;grid-template-columns:1fr 1fr}.award-visuals img{height:190px}}
 @media(max-width:550px){.award-achievement{padding:18px}.award-achievement strong{font-size:clamp(30px,8.2vw,44px)}.award-achievement span{font-size:16px}.award-visuals{grid-template-columns:1fr}.award-visuals img{height:200px}}
+
+/* Toroidal propeller detail: balanced hero, readable images and responsive layout. */
+.toroidal-page{background:#fff}
+.toroidal-page .detail-hero{padding-top:70px;padding-bottom:65px}
+.toroidal-page .detail-hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:center;gap:clamp(24px,4vw,55px)}
+.toroidal-page .detail-hero-grid>div{min-width:0}
+.toroidal-page .detail-hero h1{font-size:clamp(38px,4.1vw,64px);line-height:1.12;overflow-wrap:break-word}
+.toroidal-page .real-detail-photo{min-height:0;height:auto;margin:0;background:#fff;border:1px solid #ddd;padding:14px}
+.toroidal-page .real-detail-photo img{width:100%;height:auto;max-height:430px;object-fit:contain;aspect-ratio:auto}
+.toroidal-page .detail-art-caption{font-size:15px!important;line-height:1.5;margin-top:12px;color:#555}
+.toroidal-page .detail-facts{margin-top:42px}
+.toroidal-page .project-cfd-figure{max-width:100%;margin:36px 0 48px}
+.toroidal-page .project-cfd-figure img{max-height:580px;object-fit:contain;background:#fff}
+.toroidal-page .detail-content-grid{min-width:0}
+.toroidal-page .article-content{min-width:0}
+@media(max-width:950px){.toroidal-page .detail-hero-grid{grid-template-columns:1fr}.toroidal-page .detail-hero h1{max-width:850px}.toroidal-page .real-detail-photo{max-width:760px}.toroidal-page .detail-hero{padding-top:45px}}
+@media(max-width:600px){.toroidal-page .detail-hero h1{font-size:clamp(34px,9vw,46px)}.toroidal-page .real-detail-photo{padding:8px}.toroidal-page .detail-facts{margin-top:26px}}
